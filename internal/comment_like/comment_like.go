@@ -42,7 +42,7 @@ var db *gorm.DB
 
 func init() {
 	var err error
-	db, err = gorm.Open("mysql", "hatlonely:keaiduo1@/hatlonely?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "user:password@/eval?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
